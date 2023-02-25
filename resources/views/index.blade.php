@@ -25,4 +25,236 @@
             </div>
         </div>
     </div>
+
+    <div class="ideas-container space-y-6 my-6">
+        <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-150 ease-in cursor-pointer">
+            <div class="border-r border-gray-100 px-5 py-8">
+                <div class="text-center">
+                    <div class="font-semibold text-2xl">12</div>
+                    <div class="text-gray-400">Votes</div>
+                </div>
+                <div class="mt-8">
+                    <button class="w-20 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl px-4 py-3 hover:border-gray-400 transition duration-150 ease-in">
+                        Vote
+                    </button>
+                </div>
+            </div>
+            <div class="flex px-2 py-6 ">
+                <a href="" class="flex-none">
+                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                </a>
+                <div class="mx-4">
+                    <h4 class="text-xl font-semibold">
+                        <a href="" class="hover:underline">A random title</a>
+                    </h4>
+                    <div class="text-gray-600 mt-3 line-clamp-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dignissimos adipisci totam rem id? Quisquam laborum perspiciatis ad, nulla doloremque voluptas omnis corrupti. Odit ea ipsum dolorem maiores iste similique.
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div>10 hours ago</div>
+                            <div>&bull;</div>
+                            <div>Category 1</div>
+                            <div>&bull;</div>
+                            <div class="text-gray-900">3 Comments</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
+                                Open
+                            </div>
+                            <button class="relative flex items-center bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in py-2 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                </svg>
+                                <ul class="absolute text-left top-2 w-44 font-semibold bg-white shadow-dialog rounded-xl py-3 ml-8">
+                                    <li><a href="#" class="hover:bg-gray-100 block px-5 py-3 transition duration-150 ease-in">Marks as Spam</a></li>
+                                    <li><a href="#" class="hover:bg-gray-100 block px-5 py-3 transition duration-150 ease-in">Delete Post</a></li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-150 ease-in cursor-pointer">
+            <div class="border-r border-gray-100 px-5 py-8">
+                <div class="text-center">
+                    <div class="font-semibold text-2xl text-blue">12</div>
+                    <div class="text-gray-400">Votes</div>
+                </div>
+                <div class="mt-8">
+                    <button class="w-20 bg-blue border border-gray-200 text-white font-bold text-xs uppercase rounded-xl px-4 py-3 hover:border-gray-400 transition duration-150 ease-in">
+                        Voted
+                    </button>
+                </div>
+            </div>
+            <div class="flex px-2 py-6 ">
+                <a href="" class="flex-none">
+                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                </a>
+                <div class="mx-4">
+                    <h4 class="text-xl font-semibold">
+                        <a href="" class="hover:underline">A random title</a>
+                    </h4>
+                    <div class="text-gray-600 mt-3 line-clamp-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dignissimos adipisci totam rem id? Quisquam laborum perspiciatis ad, nulla doloremque voluptas omnis corrupti. Odit ea ipsum dolorem maiores iste similique.
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div>10 hours ago</div>
+                            <div>&bull;</div>
+                            <div>Category 1</div>
+                            <div>&bull;</div>
+                            <div class="text-gray-900">3 Comments</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="bg-yellow text-white text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
+                                In Progress
+                            </div>
+                            <button class="relative flex items-center bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in py-2 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-150 ease-in cursor-pointer">
+            <div class="border-r border-gray-100 px-5 py-8">
+                <div class="text-center">
+                    <div class="font-semibold text-2xl">12</div>
+                    <div class="text-gray-400">Votes</div>
+                </div>
+                <div class="mt-8">
+                    <button class="w-20 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl px-4 py-3 hover:border-gray-400 transition duration-150 ease-in">
+                        Vote
+                    </button>
+                </div>
+            </div>
+            <div class="flex px-2 py-6 ">
+                <a href="" class="flex-none">
+                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                </a>
+                <div class="mx-4">
+                    <h4 class="text-xl font-semibold">
+                        <a href="" class="hover:underline">A random title</a>
+                    </h4>
+                    <div class="text-gray-600 mt-3 line-clamp-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dignissimos adipisci totam rem id? Quisquam laborum perspiciatis ad, nulla doloremque voluptas omnis corrupti. Odit ea ipsum dolorem maiores iste similique.
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div>10 hours ago</div>
+                            <div>&bull;</div>
+                            <div>Category 1</div>
+                            <div>&bull;</div>
+                            <div class="text-gray-900">3 Comments</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="bg-red text-white text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
+                                Closed
+                            </div>
+                            <button class="relative flex items-center bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in py-2 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-150 ease-in cursor-pointer">
+            <div class="border-r border-gray-100 px-5 py-8">
+                <div class="text-center">
+                    <div class="font-semibold text-2xl">12</div>
+                    <div class="text-gray-400">Votes</div>
+                </div>
+                <div class="mt-8">
+                    <button class="w-20 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl px-4 py-3 hover:border-gray-400 transition duration-150 ease-in">
+                        Vote
+                    </button>
+                </div>
+            </div>
+            <div class="flex px-2 py-6 ">
+                <a href="" class="flex-none">
+                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                </a>
+                <div class="mx-4">
+                    <h4 class="text-xl font-semibold">
+                        <a href="" class="hover:underline">A random title</a>
+                    </h4>
+                    <div class="text-gray-600 mt-3 line-clamp-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dignissimos adipisci totam rem id? Quisquam laborum perspiciatis ad, nulla doloremque voluptas omnis corrupti. Odit ea ipsum dolorem maiores iste similique.
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div>10 hours ago</div>
+                            <div>&bull;</div>
+                            <div>Category 1</div>
+                            <div>&bull;</div>
+                            <div class="text-gray-900">3 Comments</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="bg-green text-white text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
+                                Implemented
+                            </div>
+                            <button class="relative flex items-center bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in py-2 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="idea-container bg-white rounded-xl flex hover:shadow-card transition duration-150 ease-in cursor-pointer">
+            <div class="border-r border-gray-100 px-5 py-8">
+                <div class="text-center">
+                    <div class="font-semibold text-2xl">12</div>
+                    <div class="text-gray-400">Votes</div>
+                </div>
+                <div class="mt-8">
+                    <button class="w-20 bg-gray-200 border border-gray-200 font-bold text-xs uppercase rounded-xl px-4 py-3 hover:border-gray-400 transition duration-150 ease-in">
+                        Vote
+                    </button>
+                </div>
+            </div>
+            <div class="flex px-2 py-6 ">
+                <a href="" class="flex-none">
+                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                </a>
+                <div class="mx-4">
+                    <h4 class="text-xl font-semibold">
+                        <a href="" class="hover:underline">A random title</a>
+                    </h4>
+                    <div class="text-gray-600 mt-3 line-clamp-3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dignissimos adipisci totam rem id? Quisquam laborum perspiciatis ad, nulla doloremque voluptas omnis corrupti. Odit ea ipsum dolorem maiores iste similique.
+                    </div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div>10 hours ago</div>
+                            <div>&bull;</div>
+                            <div>Category 1</div>
+                            <div>&bull;</div>
+                            <div class="text-gray-900">3 Comments</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="bg-purple text-white text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
+                                Considered
+                            </div>
+                            <button class="relative flex items-center bg-gray-100 hover:bg-gray-200 rounded-full h-7 transition duration-150 ease-in py-2 px-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </x-app-layout>

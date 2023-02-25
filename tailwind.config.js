@@ -21,6 +21,7 @@ module.exports = {
                 175: '43.75rem'
             },
             colors: {
+                'gray-background': '#f7f8fc',
                 'blue': '#328af1',
                 'blue-hover': '#2879bd',
                 'yellow': '#ffc73c',

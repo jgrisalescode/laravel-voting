@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IdeaController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [IdeaController::class, 'index'])->name('ideas.index');
+Route::get('/ideas/{idea:slug}', [IdeaController::class, 'show'])->name('ideas.show');
 
 Route::view('/idea', 'show');
 

@@ -53,11 +53,11 @@ class ShowIdeasTest extends TestCase
     {
         Idea::factory(Idea::PAGINATION_COUNT + 1)->create();
 
-        $ideaOne = Idea::find(4); // (4) Because I creaed 3 instances before of Idea into DB in the other methods
+        $ideaOne = Idea::first();
         $ideaOne->title = 'My First Idea';
         $ideaOne->save();
 
-        $ideaEleven = Idea::find(14);
+        $ideaEleven = Idea::all()->last();
         $ideaEleven->title = 'My Eleventh Idea';
         $ideaEleven->save();
 

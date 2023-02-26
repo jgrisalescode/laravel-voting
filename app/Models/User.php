@@ -47,4 +47,21 @@ class User extends Authenticatable
     {
         return $this->hasMany(Idea::class);
     }
+
+    // Utils
+
+    public function getAvatar(): string
+    {
+        $firstCharacter = $this->email[0];
+
+        if (is_numeric($firstCharacter)) {
+            $integerToUse = ord(strtolower($firstCharacter)) - 21;
+        } else {
+            $integerToUse = ord(strtolower($firstCharacter)) - 96;
+        }
+
+        $avatarsUrlBucket = 'https://s3.amazonaws.com/laracasts/images/forum/avatars/default-avatar-';
+        $userHash = md5($this->email);
+        return "https://www.gravatar.com/avatar/{$userHash}?s=200&d={$avatarsUrlBucket}{$integerToUse}.png";
+    }
 }

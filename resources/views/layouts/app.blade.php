@@ -50,7 +50,11 @@
                 <div class="bg-white md:sticky md:top-8 border-2 border-blue rounded-xl mt-16">
                     <div class="text-center px-6 py-2 pt-6">
                         <h3 class="font-semibold text-base">Add an idea</h3>
-                        <p class="text-xs mt-4">Let us know what you would like and we'll a look over!</p>
+                        @auth
+                            <p class="text-xs mt-4">Let us know what you would like and we will a look over!</p>
+                        @else
+                            <p class="text-xs mt-4">Please login to create an idea</p>
+                        @endauth
                     </div>
                     @auth
                         <livewire:create-idea />

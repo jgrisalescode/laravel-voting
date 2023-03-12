@@ -40,4 +40,20 @@ class Idea extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function status(): BelongsTo
+    {
+        return $this->belongsTo(Status::class);
+    }
+
+    public function getStatusClasses()
+    {
+        return match ($this->status->name){
+            'Open' => 'bg-gray-200',
+            'Considering' => 'bg-purple text-white',
+            'In Progress' => 'bg-yellow text-white',
+            'Implemented' => 'bg-green text-white',
+            'Closed' => 'bg-red text-white'
+        };
+    }
 }

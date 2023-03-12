@@ -92,3 +92,11 @@
 .status-closed:before {
     @apply bg-red text-white;
 }
+
+.alert {
+    @apply text-sm;
+}
+
+.alert-success {
+    @apply text-green;
+}

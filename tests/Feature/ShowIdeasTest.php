@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Models\Category;
 use App\Models\Idea;
 use App\Models\Status;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -12,6 +13,14 @@ use Tests\TestCase;
 class ShowIdeasTest extends TestCase
 {
     use RefreshDatabase;
+
+    private $user;
+
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->user = User::factory()->create();
+    }
 
     /** @test */
     public function list_of_ideas_shows_on_main_paige()
@@ -23,6 +32,7 @@ class ShowIdeasTest extends TestCase
         $statusConsidering = Status::factory()->create(['name' => 'Considering']);
 
         $ideaOne = Idea::factory()->create([
+            'user_id' => $this->user->id,
             'title' => 'MY first Idea',
             'category_id' => $categoryOne->id,
             'status_id' => $statusOpen->id,
@@ -30,6 +40,7 @@ class ShowIdeasTest extends TestCase
         ]);
 
         $ideaTwo = Idea::factory()->create([
+            'user_id' => $this->user->id,
             'title' => 'MY second Idea',
             'category_id' => $categoryTwo->id,
             'status_id' => $statusConsidering->id,
@@ -56,6 +67,7 @@ class ShowIdeasTest extends TestCase
         $statusOpen = Status::factory()->create(['name' => 'Open']);
 
         $idea = Idea::factory()->create([
+            'user_id' => $this->user->id,
             'title' => 'MY first Idea',
             'category_id' => $category->id,
             'status_id' => $statusOpen->id,
@@ -78,6 +90,7 @@ class ShowIdeasTest extends TestCase
         $statusOpen = Status::factory()->create(['name' => 'Open']);
 
         Idea::factory(Idea::PAGINATION_COUNT + 1)->create([
+            'user_id' => $this->user->id,
             'category_id' => $categoryOne->id,
             'status_id' => $statusOpen->id
         ]);
